@@ -1,0 +1,86 @@
+
+form {
+  max-width: 400px;
+  margin: auto;
+  background-color: #80f3ff;
+  padding: 20px;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+form li {
+  list-style: none;
+  margin: 20px 0;
+  width: 100%; 
+}
+
+form li input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc; 
+  width: calc(100% - 22px); 
+}
+
+form li span {
+  display: none;
+}
+
+form li label {
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 1.2px;
+  display: block; /* Ensure labels are block elements */
+  margin-bottom: 5px; /* Add spacing between label and input */
+}
+
+form .button {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+form .button input {
+  border: none;
+  background-color: white;
+  width: 100%; /* Make button take full width of the container */
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 10px; /* Add padding for better button appearance */
+  border-radius: 5px; /* Rounded corners for the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+form .button input:hover {
+  background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* static/day7/css/login_form.css */
+body {
+  background-color: #f8f9fa;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #e9ecef;
+}
+
+.card-body {
+  background-color: #b3ecff;
+}
+
+a.text-black:hover {
+  color: #000000;
+  text-decoration: none;
+}

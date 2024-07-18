@@ -1,0 +1,35 @@
+{% extends 'day7/base.html' %}
+{% load static %}
+{% block title %}
+  Register
+{% endblock %}
+{% block links %}
+  <link rel="stylesheet" href="{% static 'day7/css/login_form.css' %}" />
+  <style>
+    .form-group {
+      margin-bottom: 30px; /* Add space between form groups */
+    }
+  </style>
+{% endblock %}
+{% block content %}
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <div class="form">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {% for field in u_form %}
+                        <div class="form-group">
+                            <label for="{{ field.id_for_label }}">{{ field.label }}</label>
+                            {{ field }}
+                        </div>
+                    {% endfor %}
+                    <div class="form-group">
+                        <input type="submit" value="REGISTER" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
